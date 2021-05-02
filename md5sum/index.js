@@ -11,6 +11,8 @@ exports.handler = (event, handler, callback) => {
         callback(null, {
             statusCode: 200,
             body:"failed to hack."
+        });
+    }
     // command to compute md5 of provided input
     // md5sum requires stdin, so this echos and pipes the value to md5sum
     // added sed to remove the trailing " -" that md5sum adds to output
